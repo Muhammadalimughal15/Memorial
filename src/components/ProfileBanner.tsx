@@ -60,13 +60,13 @@ export default function ProfileBanner({
         backgroundImage: `url("${image}")`,
       }}
     >
-      <ThemedButton
-        onClick={onPageSetting}
-        icon={<SlidersHorizontal size={14} className="shrink-0" />}
-        className="absolute left-3 top-3 sm:left-5 sm:top-5"
-      >
-        Page Setting
-      </ThemedButton>
+ <ThemedButton
+  onClick={onPageSetting}
+  icon={<SlidersHorizontal size={14} className="shrink-0" />}
+  className="fixed left-3 top-3 z-30 shadow-[0_2px_8px_rgba(0,0,0,0.3)] sm:left-5 sm:top-5"
+>
+  Page Setting
+</ThemedButton>
 
       <ThemedButton
         onClick={openPicker}
