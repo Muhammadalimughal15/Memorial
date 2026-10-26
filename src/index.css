@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+body {
+  background-color: var(--bg-color, #f5f5f4);
+  color: var(--text-color, #000000);
+  font-weight: var(--font-weight, 300);
+  font-family: "Poppins", sans-serif;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.themed-btn {
+  background-color: var(--page-color, #ffffff);
+  color: var(--text-color, #000000);
+  font-weight: var(--font-weight, 300);
+  transition: background-color 0.2s, color 0.2s, filter 0.15s;
+}
+
+.themed-btn:hover {
+  filter: brightness(0.92);
+}
+::placeholder {
+  color: var(--text-color, #000000);
+  opacity: 0.6;
+}
+html {
+  scrollbar-gutter: stable both-edges;
+}
+html,
+body {
+  overflow-x: clip;
+}
