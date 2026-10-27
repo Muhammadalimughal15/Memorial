@@ -3,7 +3,7 @@ import ThemedButton from "../ui/ThemedButton";
 
 type FooterProps = {
   author?: string;
-  authorUrl?: string; // diya to naam click ho kar link khulega
+  authorUrl?: string;
   onViewLive?: () => void;
 };
 
@@ -16,7 +16,7 @@ export default function Footer({
 
   return (
     <footer className="mx-auto w-full max-w-[1100px] px-6 pb-10 pt-4">
-      {/* ⬇️ YEH LINE BADLI HAI: items-center se dono beech mein aate hain */}
+      
       <div className="flex flex-col items-center gap-3 text-center">
         <p className="text-sm">
           Made By{" "}

@@ -33,16 +33,16 @@ export function usePageSettings() {
     }
   });
 
-  // Har badlaw par browser mein save
+  
   useEffect(() => {
     try {
       localStorage.setItem(STORAGE_KEY, JSON.stringify(settings));
     } catch {
-      /* storage band ho to koi masla nahi */
+     
     }
   }, [settings]);
 
-  // Poori website par lagao (CSS variables ke zariye)
+  
   useEffect(() => {
     const root = document.documentElement;
     root.style.setProperty("--page-color", settings.pageColor);

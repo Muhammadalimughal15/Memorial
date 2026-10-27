@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-// Element ki chorai dekh kar batata hai ke canvas ko kitna scale karna hai
+
 export function useFitScale(baseWidth: number) {
   const [el, setEl] = useState<HTMLDivElement | null>(null);
   const [scale, setScale] = useState(1);

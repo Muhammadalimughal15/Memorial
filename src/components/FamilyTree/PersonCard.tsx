@@ -5,7 +5,7 @@ import { CARD } from "./layout";
 import type { Person } from "./types";
 
 type PersonCardProps = {
-  person: Person | null; // null = khali card (+ dikhega)
+  person: Person | null; 
   onAdd: () => void;
   onChange: (patch: Partial<Omit<Person, "id">>) => void;
   onDelete: () => void;

@@ -21,7 +21,7 @@ export default function MemoryWall() {
           ...memory,
           date: new Date().toLocaleDateString(),
         },
-        ...prev.memories, // naya memory sab se pehle
+        ...prev.memories, 
       ],
     }));
     setIsModalOpen(false);

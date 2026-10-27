@@ -40,7 +40,7 @@ export default function Gallery() {
       folders: prev.folders.map((f) => (f.id === id ? { ...f, name } : f)),
     }));
 
-  // Folder delete hone par us ki images delete nahi hotin, "All" mein chali jati hain
+  
   const deleteFolder = (id: string) => {
     setData((prev) => ({
       ...prev,

@@ -18,7 +18,7 @@ export default function PeopleBox({ label, style, people, onAdd, onChange, onDel
       className="absolute box-border flex flex-row-reverse items-center gap-3 overflow-x-auto border border-[color:var(--text-color)] p-[8px]"
       style={{ left: style.x, top: style.y, width: style.width, height: style.height }}
     >
-      {/* + wala khali card sab se right par, naye log us ke left mein aate hain */}
+     
       <PersonCard person={null} onAdd={onAdd} onChange={() => {}} onDelete={() => {}} />
 
       {people.map((person) => (

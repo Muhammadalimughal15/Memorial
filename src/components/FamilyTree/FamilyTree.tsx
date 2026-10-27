@@ -64,7 +64,7 @@ export default function FamilyTree() {
       />
 
       {data.enabled && (
-        // Poori screen ki chorai: section se bahar nikal kar left se right tak
+        
         <div
           ref={setRef}
           className="relative mt-10 w-screen overflow-hidden"

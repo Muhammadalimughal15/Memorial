@@ -7,7 +7,7 @@ type MemoryCardProps = {
 };
 
 export default function MemoryCard({ memory, onDelete }: MemoryCardProps) {
-  // Purana data (jis mein photos nahi thi) bhi crash na kare
+
   const photos = memory.photos ?? [];
 
   return (

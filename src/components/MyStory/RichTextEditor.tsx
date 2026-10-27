@@ -32,7 +32,7 @@ function ToolButton({ label, onClick, children }: ToolButtonProps) {
       type="button"
       title={label}
       aria-label={label}
-      // mouseDown rokne se text ka selection nahi hatta
+     
       onMouseDown={(e) => e.preventDefault()}
       onClick={onClick}
       className="flex h-9 w-9 cursor-pointer items-center justify-center rounded text-neutral-700 hover:bg-neutral-200"
@@ -46,7 +46,7 @@ export default function RichTextEditor({ value, onChange }: RichTextEditorProps)
   const editorRef = useRef<HTMLDivElement>(null);
   const [showColors, setShowColors] = useState(false);
 
-  // Shuru mein save hua content dikhao (baad mein browser khud sambhalta hai)
+
   useEffect(() => {
     if (editorRef.current) editorRef.current.innerHTML = value;
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -142,7 +142,7 @@ export default function RichTextEditor({ value, onChange }: RichTextEditorProps)
         aria-label="My Story"
         data-placeholder="Write your story here..."
         onInput={emit}
-        // Paste karte waqt sirf text aaye, bahar ki styling nahi
+        
         onPaste={(e) => {
           e.preventDefault();
           document.execCommand("insertText", false, e.clipboardData.getData("text/plain"));

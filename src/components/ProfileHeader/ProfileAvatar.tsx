@@ -24,7 +24,7 @@ export default function ProfileAvatar({
     if (file.size > 5 * 1024 * 1024) return setError("Image size must be less than 5 MB.");
 
     try {
-      // Avatar ke liye zyada se zyada 600px
+      
       setImage(await compressImage(file, 600));
       setError("");
     } catch {

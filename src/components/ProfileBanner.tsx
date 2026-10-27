@@ -42,7 +42,7 @@ export default function ProfileBanner({
     }
 
     try {
-      // Banner ke liye zyada se zyada 1600px
+     
       const dataUrl = await compressImage(file, 1600);
       setImage(dataUrl);
       setError("");
